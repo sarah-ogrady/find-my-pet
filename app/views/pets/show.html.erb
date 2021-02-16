@@ -1,0 +1,6 @@
+<h2><%= @pet.name  %> : <%= @pet.species %></h2>
+<p><%= @pet.address %></p>
+<p>Found: <%= time_ago_in_words(@pet.found_on) %> ago</p>
+<%= link_to 'Back', pets_path  %>
+<%= link_to 'Edit', edit_pet_path(@pet)  %>
+<%= link_to 'Delete', pet_path(@pet), method: :delete  %>
